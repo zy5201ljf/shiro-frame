@@ -1,4 +1,4 @@
-package com.levmin.shirologin;
+package com.levmin.shiro;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;

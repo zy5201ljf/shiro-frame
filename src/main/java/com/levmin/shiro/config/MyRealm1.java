@@ -1,4 +1,4 @@
-package com.levmin.shirologin.config;
+package com.levmin.shiro.config;
 
 
 import org.apache.shiro.authc.*;
