@@ -1,13 +1,9 @@
 package com.levmin.shiro.entity;
 
-import java.io.Serializable;
-
-public class SystemRole implements Serializable {
+public class SystemRole {
     private Integer id;
 
     private String roleName;
-
-    private static final long serialVersionUID = 1L;
 
     public Integer getId() {
         return id;

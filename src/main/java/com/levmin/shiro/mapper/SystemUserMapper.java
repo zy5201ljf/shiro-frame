@@ -3,8 +3,11 @@ package com.levmin.shiro.mapper;
 import com.levmin.shiro.entity.SystemUser;
 import com.levmin.shiro.entity.SystemUserExample;
 import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+@Mapper
 public interface SystemUserMapper {
     int countByExample(SystemUserExample example);
 

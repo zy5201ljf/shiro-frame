@@ -1,5 +1,8 @@
 package com.levmin.shiro;
 
+import com.levmin.shiro.entity.SystemUser;
+import com.levmin.shiro.mapper.SystemUserMapper;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
@@ -12,6 +15,7 @@ import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.Factory;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Arrays;
@@ -19,6 +23,10 @@ import java.util.Arrays;
 @Slf4j
 @SpringBootTest
 class ShiroLoginApplicationTests {
+
+    @Resource
+    private SystemUserMapper systemUserMapper;
+
 
     @Test
     void contextLoads() {
@@ -114,6 +122,13 @@ class ShiroLoginApplicationTests {
         System.out.println("16进制解密后的数据：" + str2);
 
 
+    }
+
+
+    @Test
+    void test01(){
+        SystemUser systemUser = systemUserMapper.selectByPrimaryKey(1);
+        System.out.println(systemUser.getUsername());
     }
 
 }

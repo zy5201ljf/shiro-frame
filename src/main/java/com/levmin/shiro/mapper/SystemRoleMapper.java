@@ -3,8 +3,10 @@ package com.levmin.shiro.mapper;
 import com.levmin.shiro.entity.SystemRole;
 import com.levmin.shiro.entity.SystemRoleExample;
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+@Mapper
 public interface SystemRoleMapper {
     int countByExample(SystemRoleExample example);
 

@@ -3,8 +3,10 @@ package com.levmin.shiro.mapper;
 import com.levmin.shiro.entity.SystemResources;
 import com.levmin.shiro.entity.SystemResourcesExample;
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+@Mapper
 public interface SystemResourcesMapper {
     int countByExample(SystemResourcesExample example);
 

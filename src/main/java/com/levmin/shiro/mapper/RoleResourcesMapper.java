@@ -3,8 +3,10 @@ package com.levmin.shiro.mapper;
 import com.levmin.shiro.entity.RoleResources;
 import com.levmin.shiro.entity.RoleResourcesExample;
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+@Mapper
 public interface RoleResourcesMapper {
     int countByExample(RoleResourcesExample example);
 

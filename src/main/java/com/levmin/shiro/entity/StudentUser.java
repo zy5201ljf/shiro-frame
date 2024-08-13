@@ -1,21 +1,9 @@
 package com.levmin.shiro.entity;
 
-public class SystemUser {
-    private Integer id;
-
+public class StudentUser {
     private String username;
 
     private String password;
-
-    private Integer roleId;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getUsername() {
         return username;
@@ -31,13 +19,5 @@ public class SystemUser {
 
     public void setPassword(String password) {
         this.password = password == null ? null : password.trim();
-    }
-
-    public Integer getRoleId() {
-        return roleId;
-    }
-
-    public void setRoleId(Integer roleId) {
-        this.roleId = roleId;
     }
 }

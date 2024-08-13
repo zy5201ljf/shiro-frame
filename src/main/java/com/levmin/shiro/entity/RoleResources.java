@@ -1,15 +1,11 @@
 package com.levmin.shiro.entity;
 
-import java.io.Serializable;
-
-public class RoleResources implements Serializable {
+public class RoleResources {
     private Integer id;
 
     private Integer roleId;
 
     private Integer resourceId;
-
-    private static final long serialVersionUID = 1L;
 
     public Integer getId() {
         return id;

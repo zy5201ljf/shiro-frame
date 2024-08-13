@@ -1,8 +1,6 @@
 package com.levmin.shiro.entity;
 
-import java.io.Serializable;
-
-public class SystemResources implements Serializable {
+public class SystemResources {
     private Integer id;
 
     private String resourceName;
@@ -10,8 +8,6 @@ public class SystemResources implements Serializable {
     private String resourcesUrl;
 
     private String permissionCode;
-
-    private static final long serialVersionUID = 1L;
 
     public Integer getId() {
         return id;
