@@ -5,7 +5,7 @@ import com.levmin.shiro.entity.SysUsersExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
-public interface SysUsersMapper {
+public interface SysUsersMapper extends SysUsersRepository{
     int countByExample(SysUsersExample example);
 
     int deleteByExample(SysUsersExample example);

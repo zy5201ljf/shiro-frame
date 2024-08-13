@@ -50,4 +50,8 @@ public class SysUsers {
     public void setLocked(Boolean locked) {
         this.locked = locked;
     }
+
+    public String getCredentialsSalt() {
+        return username + salt;
+    }
 }

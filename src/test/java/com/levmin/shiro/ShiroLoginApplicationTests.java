@@ -125,10 +125,5 @@ class ShiroLoginApplicationTests {
     }
 
 
-    @Test
-    void test01(){
-        SystemUser systemUser = systemUserMapper.selectByPrimaryKey(1);
-        System.out.println(systemUser.getUsername());
-    }
 
 }
