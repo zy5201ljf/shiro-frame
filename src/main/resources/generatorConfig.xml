@@ -36,64 +36,64 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-        <table tableName="studentUser"
-               domainObjectName="StudentUser"
+        <table tableName="sys_users"
+               domainObjectName="SysUsers"
                enableCountByExample="true"
                enableUpdateByExample="true"
                enableDeleteByExample="true"
                enableSelectByExample="true"
                selectByExampleQueryId="true">
-<!--            <property name="rootInterface"-->
-<!--                      value="com.levmin.shiro.repository.UsersRepository"/>-->
+            <!--            <property name="rootInterface"-->
+            <!--                      value="com.levmin.shiro.repository.UsersRepository"/>-->
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
 
-<!--        <table tableName="system_user"-->
-<!--               domainObjectName="SystemUser"-->
-<!--               enableCountByExample="true"-->
-<!--               enableUpdateByExample="true"-->
-<!--               enableDeleteByExample="true"-->
-<!--               enableSelectByExample="true"-->
-<!--               selectByExampleQueryId="true">-->
-<!--            &lt;!&ndash;            <property name="rootInterface"&ndash;&gt;-->
-<!--            &lt;!&ndash;                      value="com.levmin.shiro.repository.UsersRepository"/>&ndash;&gt;-->
-<!--            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
-<!--        </table>-->
+        <table tableName="sys_roles"
+               domainObjectName="SysRoles"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true">
+            <!--            <property name="rootInterface"-->
+            <!--                      value="com.levmin.shiro.repository.UsersRepository"/>-->
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
 
-<!--        <table tableName="role_resources"-->
-<!--               domainObjectName="RoleResources"-->
-<!--               enableCountByExample="true"-->
-<!--               enableUpdateByExample="true"-->
-<!--               enableDeleteByExample="true"-->
-<!--               enableSelectByExample="true"-->
-<!--               selectByExampleQueryId="true">-->
-<!--            &lt;!&ndash;            <property name="rootInterface"&ndash;&gt;-->
-<!--            &lt;!&ndash;                      value="com.levmin.shiro.repository.UsersRepository"/>&ndash;&gt;-->
-<!--            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
-<!--        </table>-->
+        <table tableName="sys_permissions"
+               domainObjectName="SysPermissions"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true">
+            <!--            <property name="rootInterface"-->
+            <!--                      value="com.levmin.shiro.repository.UsersRepository"/>-->
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
 
-<!--        <table tableName="system_resources"-->
-<!--               domainObjectName="SystemResources"-->
-<!--               enableCountByExample="true"-->
-<!--               enableUpdateByExample="true"-->
-<!--               enableDeleteByExample="true"-->
-<!--               enableSelectByExample="true"-->
-<!--               selectByExampleQueryId="true">-->
-<!--            &lt;!&ndash;            <property name="rootInterface"&ndash;&gt;-->
-<!--            &lt;!&ndash;                      value="com.levmin.shiro.repository.UsersRepository"/>&ndash;&gt;-->
-<!--            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
-<!--        </table>-->
+        <table tableName="sys_users_roles"
+               domainObjectName="SysUsersRoles"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true">
+            <!--            <property name="rootInterface"-->
+            <!--                      value="com.levmin.shiro.repository.UsersRepository"/>-->
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
 
-<!--        <table tableName="system_role"-->
-<!--               domainObjectName="SystemRole"-->
-<!--               enableCountByExample="true"-->
-<!--               enableUpdateByExample="true"-->
-<!--               enableDeleteByExample="true"-->
-<!--               enableSelectByExample="true"-->
-<!--               selectByExampleQueryId="true">-->
-<!--            &lt;!&ndash;            <property name="rootInterface"&ndash;&gt;-->
-<!--            &lt;!&ndash;                      value="com.levmin.shiro.repository.UsersRepository"/>&ndash;&gt;-->
-<!--            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
-<!--        </table>-->
+        <table tableName="sys_roles_permissions"
+               domainObjectName="SysRolesPermissions"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true">
+            <!--            <property name="rootInterface"-->
+            <!--                      value="com.levmin.shiro.repository.UsersRepository"/>-->
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
     </context>
 </generatorConfiguration>
