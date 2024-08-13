@@ -54,7 +54,5 @@ public class UserRealm extends AuthorizingRealm {
                 getName()
         );
         return simpleAuthenticationInfo;
-
-        return null;
     }
 }
